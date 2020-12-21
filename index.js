@@ -57,7 +57,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] MASLENT Ready scan now!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] Selamat mencoba`);
 });
 
 conn.on('credentials-updated', () =>
@@ -76,7 +76,7 @@ conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mslent`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridwan._.anugrah`)
 })
 
 conn.on('message-new', async(m) =>
@@ -321,10 +321,8 @@ const teks = text.replace(/.ytmp5 /, "")
 axios.get(`https://st4rz.herokuapp.com/api/yta?url=${teks}`).then((res) => {
     let hasil = `Audio telah tersedia pada link di bawah, silahkan klik link dan download hasilnya\n👇👇👇👇👇👇👇👇👇\n\nJudul: ${res.data.title}\n\nUkuran audio: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
-})
-}
-if (text.includes('.ping2')) {
-    conn.sendMessage(`from, ${processTime}(_Second_, MessageType.text`)
+        })
+    })
 }
 if (text.includes('.texthunder')){
   var teks = text.replace(/.texthunder /, '')
@@ -876,7 +874,7 @@ else if (text == '.foto'){
 conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageType.text);
 }
 else if (text == '.help'){
-conn.sendMessage(id, 'SUBSCRIBE CHANEL GW : MASLENT YT' ,MessageType.text);
+conn.sendMessage(id, 'FOLLOW IG GW : @ridwan._.anugrah' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
@@ -947,34 +945,6 @@ _${kata}_
     
 	*~${author}*
          `, MessageType.text
-            );
-
-         });
-   }
-   
-   if (text.includes(".hentai"))
-   {
-    var items = ["nsfwneko","anime hentai"];
-    var anim = items[Math.floor(Math.random() * items.length)];
-    var url = "https://api.computerfreaker.cf/v1/";
-    
-    axios.get(url)
-      .then((result) => {
-        var b = JSON.parse(JSON.stringify(result.data));
-        var anim =  b[Math.floor(Math.random() * b.length)];
-        imageToBase64(anim) // Path to the image
-        .then(
-            (response) => {
-	var buf = Buffer.from(response, 'base64'); // Ta-da	
-              conn.sendMessage(
-            id,
-              buf,MessageType.image)
-       
-            }
-        )
-        .catch(
-            (error) => {
-                console.log(error); // Logs an error if there was one
             }
         )
     
