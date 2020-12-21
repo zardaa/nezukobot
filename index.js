@@ -3,8 +3,6 @@ const ZARDA = 'ᖇEᐯIᐯE IᑎᗪO ᖇOᒪEᑭᒪᗩY'; // Jangan lu ubah² ka
 const instagram = 'https://instagram.com/reviveindo_rp'; //Jangan lu ubah² kalo gak mau error
 const nomer = 'https://wa.me/+628881372457'; // Jangan lu ubah² kalo gak mau error
 const aktif = '24 JAM'; // Kapan bot lu aktif
-const groupwa = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // Jangan lu ubah² kalo gak mau error
-const youtube = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // Jangan lu ubah² kalo gak mau error
 //
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -74,11 +72,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mslent`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridwan._.anugrah`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mslent`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridwan._.anugrah`)
 })
 
 conn.on('message-new', async(m) =>
