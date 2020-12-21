@@ -146,13 +146,13 @@ conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 else if (text == '.owner'){
 conn.sendMessage(id, 'Owner wa.me/+6282397075810' ,MessageType.text);
 }
-else if (text == 'Riwan'){
+else if (text == 'Ridwan'){
 conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
 }
 else if (text == 'Iwan'){
 conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
 }
-else if (text == 'riwan'){
+else if (text == 'ridwan'){
 conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
 }
 else if (text == 'iwan'){
@@ -180,10 +180,10 @@ else if (text == 'Bangsat'){
 conn.sendMessage(id, 'toxic terdeteksi' ,MessageType.text);
 }
 else if (text == 'Ngentod'){
-conn.sendMessage(id, 'Pengin ngentod?' ,MessageType.text);
+conn.sendMessage(id, 'napa lu? pengin ngentod??' ,MessageType.text);
 }
 else if (text == 'Anjing'){
-conn.sendMessage(id, 'Jangan toxic anjing' ,MessageType.text);
+conn.sendMessage(id, 'mungkin lu yang anjing' ,MessageType.text);
 }
 else if (text == 'Bacot'){
 conn.sendMessage(id, 'lu bacot_-' ,MessageType.text);
@@ -192,10 +192,10 @@ else if (text == 'bangsat'){
 conn.sendMessage(id, 'toxic terdeteksi' ,MessageType.text);
 }
 else if (text == 'ngentod'){
-conn.sendMessage(id, 'Pengin ngentod?' ,MessageType.text);
+conn.sendMessage(id, 'napa lu? pengin ngentod?' ,MessageType.text);
 }
 else if (text == 'anjing'){
-conn.sendMessage(id, 'Jangan toxic anjing' ,MessageType.text);
+conn.sendMessage(id, 'mungkin lu yang anjing' ,MessageType.text);
 }
 else if (text == 'Bacot'){
 conn.sendMessage(id, 'lu yang bacot juga' ,MessageType.text);
