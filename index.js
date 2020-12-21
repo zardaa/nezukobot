@@ -407,18 +407,7 @@ const teks = text.replace(/.yt /, "")
 axios.get(`https://st4rz.herokuapp.com/api/ytv?url=${teks}`).then((res) => {
     let hasil = `Video telah tersedia pada link di bawah, silahkan klik link dan download hasilnya\n\n\nJudul: ${res.data.title}\n\nUkuran video: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
-})
-}
-if (text.includes('.randomhentai2')){
-  var teks = text.replace(/.randomhentai2 /, '')
-    axios.get(`https://tobz-api.herokuapp.com/api/hentai`).then((res) => {
-      imageToBase64(res.data.result)
-        .then(
-          (ress) => {
-            var buf = Buffer.from(ress, 'base64')
-            conn.sendMessage(id, buf, MessageType.image)
-        })
-    })
+  })
 }
 
 if (text.includes(".quotesanime")){
