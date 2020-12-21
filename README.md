@@ -32,8 +32,6 @@ kalo lu belum punya apk termux, download di playstore
 > ls
 > Termux-setup-storage
 > ls
-> cd
-> ls
 > unzip wa-termux
 > cd wa-termux
 > pkg install ffmpeg
