@@ -1,7 +1,7 @@
 
 const ZARDA = 'ᖇEᐯIᐯE IᑎᗪO ᖇOᒪEᑭᒪᗩY'; // Jangan lu ubah² kalo gak mau error
 const instagram = 'https://instagram.com/reviveindo_rp'; //Jangan lu ubah² kalo gak mau error
-const nomer = 'https://wa.me/+628881372457'; // Jangan lu ubah² kalo gak mau error
+const nomer = 'https://wa.me/+6282397075810'; // Jangan lu ubah² kalo gak mau error
 const aktif = '24 JAM'; // Kapan bot lu aktif
 //
 const qrcode = require("qrcode-terminal");
