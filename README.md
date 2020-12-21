@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/zardaa/nezukobot/main/temp/NezukoBot.jpg" width="230" height="230"/>
+<img src="https://raw.githubusercontent.com/zardaa/nezukobot/main/temp/NezukoBot.jpg" width="300" height="300"/>
 
 
 ### Alat dan Bahan
