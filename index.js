@@ -20,7 +20,7 @@ const info = require("./lib/info.js");
 const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:XP Ridan\n' // full name
+            + 'FN:XP Ridwan\n' // full name
             + 'ORG:Owner Zarda;\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=628165466368:+62 816-5466-368\n' // WhatsApp ID + phone number
             + 'END:VCARD'
