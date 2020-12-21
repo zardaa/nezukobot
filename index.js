@@ -57,7 +57,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] MASLENT Ready scan now!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] SELAMAT MENCOBA`);
 });
 
 conn.on('credentials-updated', () =>
@@ -264,28 +264,28 @@ else if (text == 'Euy'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
 }
 else if (text == 'makasi'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama' ,MessageType.text);
 }
 else if (text == 'Makasi'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama' ,MessageType.text);
 }
 else if (text == 'makasih'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama' ,MessageType.text);
 }
 else if (text == 'Makasih'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama' ,MessageType.text);
 }
 else if (text == 'thank'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama' ,MessageType.text);
 }
 else if (text == 'Thank'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama' ,MessageType.text);
 }
 else if (text == 'thanks'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama' ,MessageType.text);
 }
 else if (text == 'Thanks'){
-conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
+conn.sendMessage(id, 'Sama sama' ,MessageType.text);
 }
 
 // Fitur
@@ -330,7 +330,7 @@ axios.get(`https://st4rz.herokuapp.com/api/yta?url=${teks}`).then((res) => {
 })
 }
 if (text.includes('.ping2')) {
-    conn.sendMesge(`from,t`)
+    conn.sendMessage(`from, ${processTime}(_Second_, MessageType.text`)
 }
 if (text.includes('.texthunder')){
   var teks = text.replace(/.texthunder /, '')
@@ -419,14 +419,14 @@ axios.get(`https://st4rz.herokuapp.com/api/ytv?url=${teks}`).then((res) => {
 }
 if (text.includes(".nekopoi2")){
 const teks = text.replace(/.nekopoi2 /, "")
-axios.get(`https://mhankbarbar.pp.com/aeeks}&apikey=YJgk853Hbai`).then((res) => {
+axios.get(`https://mhankbarbar.herokuapp.com/api/nekopoi?url=${teks}&apikey=YJgk853Hbai`).then((res) => {
     let hasil = `${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
 if (text.includes('.randomhentai2')){
   var teks = text.replace(/.randomhentai2 /, '')
-    axios.get(`https://tobz-api.roentai`).then((res) => {
+    axios.get(`https://tobz-api.herokuapp.com/api/hentai`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -521,7 +521,7 @@ conn.sendMessage(id, 'maslent telah mrubah descripsi grup' ,MessageType.text, { 
 
 }
 if (text.includes('.creator')){
-conn.sendMessage(id, {displayname: "Ridwan", vcard: vcard}, MessageType.contact)
+conn.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact)
 conn.sendMessage(id, 'Ingin donasi untuk masukin Bot ke group?, chat Owner :D', MessageType.text)
 }
 if (text.includes(".bitly")){
@@ -560,7 +560,7 @@ axios.get(`https://arugaz.herokuapp.com/api/wikien?q=${teks}`).then((res) => {
 }
 if (text.includes(".nekonime")) {
   const teks = text.replace(/.nekonime /, "")
-  axios.get(`https://st4rz.herom/api/nekonime`).then((res) => {
+  axios.get(`https://st4rz.herokuapp.com/api/nekonime`).then((res) => {
     conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     let hasil = ` *Nih animenya :)*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil, MessageType.text);
@@ -638,7 +638,7 @@ conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
 }
 if (text.includes(".cersex1")){
 const teks = text.replace(/.cersex1 /, "")
-axios.get(`https://arugap.com/api/cersex2`).then((res) => {
+axios.get(`https://arugaz.herokuapp.com/api/cersex2`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     let hasil = ` *Nih cersex Kak :)*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
@@ -646,7 +646,7 @@ conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
 }
 if (text.includes(".cersex2")){
 const teks = text.replace(/.cersex2 /, "")
-axios.get(`https://arugaz.heropi/cersex1`).then((res) => {
+axios.get(`https://arugaz.herokuapp.com/api/cersex1`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     let hasil = ` *Nih cersex Kak :)*\n\n _${res.data.result}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
@@ -701,7 +701,7 @@ axios.get(`https://arugaz.herokuapp.com/api/spamsms?no=${teks}&jum=20`).then((re
 }
 if (text.includes(".indohot")){
 const teks = text.replace(/.indohot /, "")
-axios.get(`https://arupp.com/api/indohot`).then((res) => {
+axios.get(`https://arugaz.herokuapp.com/api/indohot`).then((res) => {
 	conn.sendMessage(id, '[WAIT] Proses...❗', MessageType.text)
     let hasil = ` *Tobat Bosq* \n\n *Judul* _${res.data.result.judul}_ \n\n *Status* _${res.data.result.genre}_ \n\n *Durasi* _${res.data.result.durasi}_ \n\n *Link Bosq* _${res.data.result.url}_ `;
     conn.sendMessage(id, hasil ,MessageType.text);
@@ -943,7 +943,7 @@ conn.sendMessage(id, 'SUBSCRIBE CHANEL GW : MASLENT YT' ,MessageType.text);
    {
       let caption = imageMessage.caption.toLocaleLowerCase()
       const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
-      if (caption == '.stiker')
+      if (caption == '.sticker')
       {
          const stiker = await conn.downloadAndSaveMediaMessage(m) // to decrypt & save to file
 
