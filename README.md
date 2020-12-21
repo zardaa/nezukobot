@@ -1,5 +1,6 @@
 <img src="https://raw.githubusercontent.com/zardaa/nezukobot/main/temp/NezukoBot.jpg" width="300" height="300"/>
-
+</p>
+<br>
 
 ### Alat dan Bahan
 Siapin alat dan bahannya.
