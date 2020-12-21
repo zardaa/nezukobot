@@ -20,7 +20,6 @@ Siapin alat dan bahannya.
 > penyimpanan yang memadai
 > aplikasi whatsapp
 > aplikasi termux
-> kopi+rokok ;v
 ```
 
 ### Cara Installnya
