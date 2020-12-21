@@ -34,8 +34,8 @@ kalo lu belum punya apk termux, download di playstore
 > ls
 > unzip nezukobot
 > cd nezukobot
-> npm i -g cwebp && npm i -g ytdl
-> npm i node-tesseract-ocr && npm i && npm i got && node index js
+> npm i -g cwebp && npm i node-tesseract-ocr
+> npm i -g ytdl && npm i && npm i got && node index js
 
 —> TINGGAL SCAN QR NYA DAN SELESAI
 ```
