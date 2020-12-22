@@ -894,7 +894,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, xp.xp(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwa, youtube) ,MessageType.text);
+conn.sendMessage(id, xp.xp(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif) ,MessageType.text);
 }
 else if (text == '.info'){
   const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
@@ -931,19 +931,19 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, info.info(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwa, youtube) ,MessageType.text);
+conn.sendMessage(id, info.info(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif) ,MessageType.text);
 }
 else if (text == '.foto'){
 conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageType.text);
 }
 else if (text == '.help'){
-conn.sendMessage(id, 'SUBSCRIBE CHANEL GW : MASLENT YT' ,MessageType.text);
+conn.sendMessage(id, 'FOLLOW : @ridwan._.anugrah' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
       let caption = imageMessage.caption.toLocaleLowerCase()
       const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
-      if (caption == '.sticker')
+      if (caption == '.stiker')
       {
          const stiker = await conn.downloadAndSaveMediaMessage(m) // to decrypt & save to file
 
@@ -954,7 +954,7 @@ conn.sendMessage(id, 'SUBSCRIBE CHANEL GW : MASLENT YT' ,MessageType.text);
          exec('cwebp -q 50 ' + stiker + ' -o temp/' + jam + '.webp', (error, stdout, stderr) =>
          {
             let stik = fs.readFileSync('temp/' + jam + '.webp')
-            conn.sendMessage(id, stik, MessageType.sticker)
+            conn.sendMessage(id, stik, MessageType.stiker)
          });
       }
    }
