@@ -17,7 +17,7 @@ const imageToBase64 = require('image-to-base64');
 const xp = require("./lib/xp.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
-const readTextInImage = require('./lib/ocr')
+const readTextInImage = require('./lib/ocr.js')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:XP Zarda\n' // full name
