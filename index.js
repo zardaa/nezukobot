@@ -943,7 +943,7 @@ conn.sendMessage(id, 'FOLLOW : @ridwan._.anugrah' ,MessageType.text);
    {
       let caption = imageMessage.caption.toLocaleLowerCase()
       const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
-      if (caption == '.stiker')
+      if (caption == '.sticker')
       {
          const stiker = await conn.downloadAndSaveMediaMessage(m) // to decrypt & save to file
 
@@ -954,7 +954,7 @@ conn.sendMessage(id, 'FOLLOW : @ridwan._.anugrah' ,MessageType.text);
          exec('cwebp -q 50 ' + stiker + ' -o temp/' + jam + '.webp', (error, stdout, stderr) =>
          {
             let stik = fs.readFileSync('temp/' + jam + '.webp')
-            conn.sendMessage(id, stik, MessageType.stiker)
+            conn.sendMessage(id, stik, MessageType.sticker)
          });
       }
    }
