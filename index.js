@@ -1,6 +1,6 @@
 
 const ZARDA = 'ᖇEᐯIᐯE IᑎᗪO ᖇOᒪEᑭᒪᗩY'; // Jangan lu ubah² kalo gak mau error
-const instagram = 'https://instagram.com/reviveindo_rp'; //Jangan lu ubah² kalo gak mau error
+const instagram = 'https://instagram.com/ridwan._.anugrah'; //Jangan lu ubah² kalo gak mau error
 const nomer = 'https://wa.me/+6282397075810'; // Jangan lu ubah² kalo gak mau error
 const aktif = '24 JAM'; // Kapan bot lu aktif
 //
@@ -17,11 +17,11 @@ const imageToBase64 = require('image-to-base64');
 const xp = require("./lib/xp.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
-const readTextInImage = require('./lib/ocr.js')
+const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:XP Zarda\n' // full name
-            + 'ORG:Owner NezukoBot;\n' // the organization of the contact
+            + 'FN:XP zarda\n' // full name
+            + 'ORG:Owner zardaa;\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=6282397075810:+62 823-9707-5810\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 //
